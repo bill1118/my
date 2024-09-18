@@ -171,6 +171,8 @@ header .nav .menu a {
 
 header .nav .menu a:hover {
     font-size: 20px;
+    color: #D0A960;
+    font-weight: bold
 }
 
 header .nav .menu img {
@@ -251,7 +253,7 @@ header .nav .menu img {
 }
 
 /* scrolling */
-#scrolling{
+#scrolling {
     height: 40vh;
 }
 
@@ -286,6 +288,59 @@ header .nav .menu img {
 }
  */
 
+/* news */
+#news{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.news_title{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 120px;
+    margin-bottom: 170px;
+    margin-left: 150px;
+}
+
+.news_title_b{
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.news_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 150px;
+}
+
+.news_content .news_content_item a{
+    text-decoration: none;
+    color: black;
+}
+
+.news_content_item_time{
+    font-size: 12px;
+}
+
+.news_content_item_title{
+    border-bottom: 1px solid transparent; 
+    transition: border-color 0.35s ease-out, transform 0.3s ease-out;;
+}
+
+.news_content_item a:hover .news_content_item_title{
+    border-color: black;
+    transform: translateX(12px);
+}
 
 /* Footer */
 .footer {
@@ -321,6 +376,8 @@ header .nav .menu img {
 
 .footer-menu a:hover {
     font-size: 1.2rem;
+    color: #D0A960;
+    font-weight: bold
 }
 
 .footer-abouts {
@@ -348,69 +405,7 @@ header .nav .menu img {
 }
 
 
-/* 滾動 */
-/* section {
-    padding: 3em;
-    height: 100vh;
-    position: relative;
-    box-sizing: border-box;
+/* products */
+#products{
+    background-color: #654321;
 }
-
-blockquote {
-    font-size: 2.3em;
-    width: 30%;
-    margin-top: 17%;
-    position: absolute;
-}
-
-span {
-    width: 100%;
-    background: red;
-    display: block;
-    height: 5px;
-    margin-top: 20px;
-}
-
-img {
-    position: absolute;
-}
-
-img:nth-of-type(1) {
-    width: 40%;
-    right: 0;
-    top: 20%;
-}
-
-img:nth-of-type(2) {
-    width: 25%;
-    right: 40%;
-    top: 29%;
-    margin-top: 15%;
-}
-
-
-section:nth-child(odd) {
-    background: #f1f1f1;
-}
-
-.sticky {
-    background: white !important;
-}
-
-.percentage {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-}
-
-#box {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    border: 5px solid lightgray;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-} */
