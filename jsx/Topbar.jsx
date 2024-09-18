@@ -8,16 +8,16 @@ function Topbar() {
     return (
         <header>
             <h1 className="logo">
-                <a href="./index.html"><img src="./images/Whisky.svg" alt="Whisky" /></a>
+                <a href="./index.html"><img src="./images/Whisky-logo.svg" alt="Whisky" /></a>
             </h1>
             <nav className="nav">
                 <ul className="menu">
-                    <li><a href="">酒類介紹</a></li>
-                    <li><a href="">品牌故事</a></li>
-                    <li><a href="">最新消息</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="">STORY</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">CONTACT</a></li>
                     <li>
-                        <img src="./images/SVGRepo_iconCarrier.svg" alt="icon" onClick={toggle} />
+                        <img src="./images/icon/menu-white.svg" alt="icon" onClick={toggle} />
                     </li>
                 </ul>
 
@@ -29,7 +29,7 @@ function Topbar() {
                 <div className="toggleMenu" >
                     <span id="closePopup" className="closePopup" onClick={toggle}>&times;</span>
                     <h1 className="logo2">
-                        <a href=""><img src="./images/Whisky.svg" alt="whisky" /></a>
+                        <a href=""><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
                     </h1>
                     <address className="address">
                         <p>02-1234-5678</p>
@@ -37,17 +37,17 @@ function Topbar() {
                     </address>
                     <nav className="nav">
                         <ul className="menu">
-                            <li><a href="">酒類介紹</a></li>
-                            <li><a href="">品牌故事</a></li>
-                            <li><a href="">最新消息</a></li>
-                            <li><a href="">聯絡我們</a></li>
+                            <li><a href="">PRODUCTS</a></li>
+                            <li><a href="">STORY</a></li>
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div className="abouts">
                         <p>ABOUT US</p>
                         <div className="img">
-                            <img src="./images/icon-facebook.svg" alt="fb" />
-                            <img src="./images/icon-instagram.svg" alt="ig" />
+                        <a href=""><img src="./images/icon/icon-facebook.svg" alt="fb" /></a>
+                        <a href=""><img src="./images/icon/icon-instagram.svg" alt="ig" /></a>
                         </div>
                     </div>
                 </div>

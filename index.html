@@ -11,10 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
-
+    <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
+    <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/Cards.jsx"></script>
+    <script type="text/babel" src="./jsx/Scrolling.jsx"></script>
 
 </head>
 
@@ -31,14 +35,17 @@
                     <Topbar />
                     <main>
                         <section className="banner">
-                            <video autoplay loop muted>
-                                <source src="./images/5537827-uhd_4096_2160_25fps.mp4" type="video/mp4" />
-                            </video>
+                            <div className="video-container">
+                                <video autoPlay loop muted >
+                                    <source src="./images/81807_Woman taking ice from a glass and putting it into her soft drink_By_Omri_Ohana_Artlist_HD - Compressed with FlexClip.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </section>
-                        <section></section>
-                        <section></section>
+                    <Scrolling/>
+                    <Cards/>
 
                     </main>
+                    <Footer />
 
                 </React.Fragment>
             )
@@ -48,6 +55,7 @@
             .createRoot(document.getElementById('root'))
             .render(<App />);
     </script>
+
 
 </body>
 
