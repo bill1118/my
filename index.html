@@ -8,18 +8,37 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><!-- 舊版 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
     <link rel="stylesheet" href="./css/style.css">
 
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
+
 </head>
 
 <body>
     <div id="root"></div>
+
     <script type="text/babel">
+
+        const { useState, useEffect, useRef } = React;
+
         function App() {
             return (
                 <React.Fragment>
                     <Topbar />
+                    <main>
+                        <section className="banner">
+                            <video autoplay loop muted>
+                                <source src="./images/5537827-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+                            </video>
+                        </section>
+                        <section></section>
+                        <section></section>
+
+                    </main>
 
                 </React.Fragment>
             )
@@ -29,6 +48,7 @@
             .createRoot(document.getElementById('root'))
             .render(<App />);
     </script>
+
 </body>
 
 </html>

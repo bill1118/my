@@ -1,19 +1,87 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,60 +89,220 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     font-family:
         /*西文*/
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
         /*中文*/
-        "Noto Sans TC", sans-serif ,"蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", ;
+        "Noto Sans TC", sans-serif, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", ;
     line-height: 1.5;
     letter-spacing: .1rem;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+/* 共用 */
+section{
+    height: 100vh;
+}
+
 /* header */
-header{
+header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;    
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 16px 24px;
-    background-color:yellowgreen;
+    padding: 5px 24px;
 }
 
-header .nav .menu{
+header .nav .menu {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     gap: 65px;
+    padding-right: 50px;
 }
 
-header .nav .menu a{
+
+header .nav .menu a {
+    color: black;
     text-decoration: none;
-    transition: transform 0.3s ease; 
+    transition: 0.3s ease;
 }
 
-header .nav .menu a:hover{
-    transform: scale(1.2) ;
+header .nav .menu a:hover {
+    font-size: 1.2rem;
 }
+
+header .nav .menu img {
+    cursor: pointer;
+}
+
+.toggleMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    gap: 50px;
+    color: white;
+}
+
+.toggleMenu span {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.toggleMenu .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleMenu .menu {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 10px 0;
+}
+
+.toggleMenu .menu li a {
+    color: white;
+}
+
+.toggleMenu .abouts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.toggleMenu .abouts .img{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    gap: 30px;
+}
+
+.toggleMenu .abouts img{
+    transform: scale(1.6);
+}
+
+
+
+/* 滾動 */
+/* section {
+    padding: 3em;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+blockquote {
+    font-size: 2.3em;
+    width: 30%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+span {
+    width: 100%;
+    background: red;
+    display: block;
+    height: 5px;
+    margin-top: 20px;
+}
+
+img {
+    position: absolute;
+}
+
+img:nth-of-type(1) {
+    width: 40%;
+    right: 0;
+    top: 20%;
+}
+
+img:nth-of-type(2) {
+    width: 25%;
+    right: 40%;
+    top: 29%;
+    margin-top: 15%;
+}
+
+
+section:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+.sticky {
+    background: white !important;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 5px solid lightgray;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
