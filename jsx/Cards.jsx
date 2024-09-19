@@ -4,7 +4,7 @@ const Cards = () => {
         { id: 2, img: "./images/alcohol/whisky-4.jpg" },
         { id: 3, img: "./images/alcohol/whisky-3.jpg" },
         { id: 4, img: "./images/alcohol/whisky-2.jpg" },
-        { id: 5, img: "./images/alcohol/whisky-5.png" },
+        { id: 5, img: "./images/alcohol/whisky-5.jpg" },
         { id: 6, img: "./images/alcohol/whisky-6.jpg" }
     ]);
     const [swapping, setSwapping] = useState(null);
