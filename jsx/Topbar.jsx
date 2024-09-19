@@ -23,10 +23,9 @@ function Topbar() {
 
             </nav>
 
-
             {isMenuPopup && (
 
-                <div className="toggleMenu" >
+                <div className={`toggleMenu ${isMenuPopup ? 'show' : ''}`} >
                     <span id="closePopup" className="closePopup" onClick={toggle}>&times;</span>
                     <h1 className="logo2">
                         <a href="../index.html"><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
@@ -46,8 +45,8 @@ function Topbar() {
                     <div className="abouts">
                         <p>ABOUT US</p>
                         <div className="img">
-                        <a href=""><img src="./images/icon/icon-facebook.svg" alt="fb" /></a>
-                        <a href=""><img src="./images/icon/icon-instagram.svg" alt="ig" /></a>
+                            <a href=""><img src="./images/icon/icon-facebook.svg" alt="fb" /></a>
+                            <a href=""><img src="./images/icon/icon-instagram.svg" alt="ig" /></a>
                         </div>
                     </div>
                 </div>

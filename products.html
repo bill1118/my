@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,9 @@
 
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/WhiskyGallery.jsx"></script>
 </head>
+
 <body>
     <div id="root"></div>
 
@@ -25,10 +28,7 @@
                 <React.Fragment>
                     <Topbar />
                     <main>
-                        <section id="products"></section>
-                    
-                    
-
+                        <WhiskyGallery/>
                     </main>
                     <Footer />
 
@@ -41,4 +41,5 @@
             .render(<App />);
     </script>
 </body>
+
 </html>
