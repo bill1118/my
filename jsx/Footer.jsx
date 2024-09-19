@@ -2,7 +2,7 @@ function Footer() {
     return (
         <div className="footer">
             <h1 className="footer-logo2">
-                <a href=""><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
+                <a href="../index.html"><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
             </h1>
             <address className="footer-address">
                 <p>02-1234-5678</p>

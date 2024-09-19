@@ -29,7 +29,7 @@ function Topbar() {
                 <div className="toggleMenu" >
                     <span id="closePopup" className="closePopup" onClick={toggle}>&times;</span>
                     <h1 className="logo2">
-                        <a href=""><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
+                        <a href="../index.html"><img src="./images/Whisky-logo.svg" alt="whisky" /></a>
                     </h1>
                     <address className="address">
                         <p>02-1234-5678</p>
