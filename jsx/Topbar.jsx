@@ -12,7 +12,7 @@ function Topbar() {
             </h1>
             <nav className="nav">
                 <ul className="menu">
-                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="../products.html">PRODUCTS</a></li>
                     <li><a href="">STORY</a></li>
                     <li><a href="">NEWS</a></li>
                     <li><a href="">CONTACT</a></li>
@@ -37,7 +37,7 @@ function Topbar() {
                     </address>
                     <nav className="nav">
                         <ul className="menu">
-                            <li><a href="">PRODUCTS</a></li>
+                            <li><a href="../products.html">PRODUCTS</a></li>
                             <li><a href="">STORY</a></li>
                             <li><a href="">NEWS</a></li>
                             <li><a href="">CONTACT</a></li>
